@@ -1,0 +1,83 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ff5e5e;
+}
+
+/* Cabecera con rojo más claro */
+header {
+    background-color: #ff9999;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.logo {
+    width: 150px;
+}
+
+/* Estilo de las cartas */
+.card {
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    height: 250px;
+    margin: auto;
+    position: relative;
+    margin-top: 10px;
+    background-color: transparent;
+}
+
+/* Imagen de la Pokébola de fondo */
+.card::before {
+    content: '';
+    background-image: url('../pokeball.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+/* Imagen del Pokémon */
+.card img {
+    width: 120px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    padding-top: 40px; /* Ajustar para dar más espacio al texto */
+    z-index: 2;
+    background-color: transparent;
+}
+
+/* Contenedor del texto más pequeño y separado */
+.card-body {
+    background-color: transparent; /* Sin fondo */
+    padding: 2px; /* Menos padding para reducir el tamaño */
+    margin-top: 20px; /* Añadir margen para separar el texto de la imagen */
+    position: relative;
+    z-index: 3;
+    background-color: #ff9999; /* Fondo del texto */
+    border-radius: 20px; /* Bordes redondeados */
+
+    height: 20px; /* Reducir la altura del contenedor */
+    margin-top: 60px;
+    display: flex;
+    align-items: center; /* Centrar el texto verticalmente */
+    justify-content: center; /* Centrar el texto horizontalmente */
+}
+
+/* Texto de las cartas */
+.card-text {
+    font-size: 13px; /* Texto más pequeño */
+    font-weight: bold;
+    color: #333;
+    margin: 0; /* Sin márgenes adicionales */
+    text-align: center;
+}
+
+
