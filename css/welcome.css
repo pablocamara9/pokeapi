@@ -1,28 +1,33 @@
-body {
-    font-family: Arial, sans-serif;
+@font-face {
+    font-family: "IrishGrover";
+    src: url(../fonts/IrishGrover-Regular.ttf);
+}
+
+html{
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
-header {
-    background-color: #333;
-    color: white;
+body {
+    background: linear-gradient(to bottom, #FF000050, #FFFFFF50);
+}
+
+.main{
+    margin: 5%;
     text-align: center;
-    padding: 10px 0;
+    height: 100%;
 }
 
-.contenido {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 0 20px;
+.main>h2{
+    font-family: "IrishGrover";
+    font-size: 54px;
+    font-weight: 100;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.main>a{
+    background-color: #F5F5F5;
+    border: 2px solid black;
+    /*margin-top: 500px;
+    padding: 200px*/;
 }

@@ -1,0 +1,67 @@
+html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(to bottom, #FF000050, #FFFFFF50);
+}
+
+header{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    background-color: #D9D9D960;
+}
+
+#return{
+    width: 5%;
+    height: 5%;
+}
+
+.logo{
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.logo>img{
+    width: 40%;
+    height: 40%;
+}
+.pokemon{
+    width: 50%; 
+    height: 50%; 
+    margin: 20px;
+    position: relative;
+    margin-top: 10px;
+}
+
+/* Imagen de la Pokébola de fondo */
+.pokemon::before {
+    content: '';
+    background-image: url('../img/pokeball.png');
+    background-size: 70%; 
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0.8;
+}
+/*.pokemon::before{
+
+    margin-left: 20px;
+    background-image: url('../img/pokeball.png');
+    background-size: 70%;
+    background-repeat: no-repeat;
+
+}
+.pokemon img{
+    
+}*/
