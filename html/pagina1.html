@@ -11,9 +11,14 @@
 <body>
     <div class="container">
         <!-- Header -->
-        <header class="d-flex justify-content-between align-items-center py-4">
-            <img src="../pokemonlogo-removebg-preview.png" alt="Pokemon Logo" class="logo">
-            <div class="input-group w-50">
+        <header class="py-4">
+            <div class="d-flex justify-content-start align-items-center mb-3">
+                <button class="btn btn-danger me-3"> <!-- me-3 para agregar margen a la derecha -->
+                    <i class="bi bi-door-open"></i> Salir
+                </button>
+                <img src="../pokemonlogo-removebg-preview.png" alt="Pokemon Logo" class="logo"> <!-- Imagen del logo -->
+            </div> 
+            <div class="input-group w-75 mx-auto"> <!-- Centrando el buscador con márgenes automáticos -->
                 <input type="text" class="form-control" placeholder="Buscar Pokémon">
                 <button class="btn btn-outline-secondary">🔍</button>
                 <select class="form-select w-auto ms-2">
@@ -21,6 +26,8 @@
                 </select>
             </div>
         </header>
+    </div>
+    
 
         <!-- Pokémon List -->
         <section class="row text-center g-4">
