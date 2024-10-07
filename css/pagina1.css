@@ -3,28 +3,50 @@ body {
     background-color: #ff5e5e;
 }
 
-/* Cabecera con rojo más claro */
+/* Cabecera con rojo más claro y centrado */
 header {
     background-color: #ff9999;
     padding: 20px;
     border-radius: 10px;
     height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo {
-    width: 150px;
-    position: absolute;
-    margin-left: 27%;
-    height: 250px;
-
+    width: 250px;
+    height: auto;
+    margin-bottom: 20px;
 }
 
-/* Estilo de las cartas */
+/* Estilo de la sección donde aparecerá el Pokémon */
+.pokemon-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pokemon-info img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.pokemon-info #info {
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+
+/* Carta estilo más pequeño y separado */
 .card {
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 140px; 
-    height: 180px; 
+    width: 140px;
+    height: 180px;
     margin: auto;
     position: relative;
     margin-top: 10px;
@@ -35,7 +57,7 @@ header {
 .card::before {
     content: '';
     background-image: url('../pokeball.png');
-    background-size: 70%; 
+    background-size: 70%;
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -49,7 +71,7 @@ header {
 
 /* Imagen del Pokémon */
 .card img {
-    width: 80px; 
+    width: 80px;
     height: auto;
     margin: 0 auto;
     display: block;
@@ -68,16 +90,16 @@ header {
     background-color: #ff9999;
     border-radius: 10px;
     margin-top: 70px;
-    height: 15px; 
+    height: 15px;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
 }
 
 /* Texto de las cartas */
 .card-text {
-    font-size: 10px; 
+    font-size: 10px;
     font-weight: bold;
     color: #333;
     margin: 0;
