@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "IrishGrover";
-    src: url(../fonts/IrishGrover-Regular.ttf);
+    font-family: "Jaro";
+    src: url(../fonts/Jaro-Regular-VariableFont_opsz.ttf);
 }
 
 html{
@@ -20,7 +20,7 @@ body {
 }
 
 .main>h2{
-    font-family: "IrishGrover";
+    font-family: "Jaro";
     font-size: 54px;
     font-weight: 100;
 }

@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Jaro";
+    src: url(../fonts/Jaro-Regular-VariableFont_opsz.ttf);
+}
+
 html{
     margin: 0;
     padding: 0;
@@ -31,7 +36,7 @@ header{
     width: 40%;
     height: 40%;
 }
-.pokemon{
+/*.pokemon{
     width: 50%; 
     height: 50%; 
     margin: 20px;
@@ -39,7 +44,7 @@ header{
     margin-top: 10px;
 }
 
-/* Imagen de la Pokébola de fondo */
+Imagen de la Pokébola de fondo
 .pokemon::before {
     content: '';
     background-image: url('../img/pokeball.png');
@@ -53,7 +58,8 @@ header{
     bottom: 0;
     z-index: 1;
     opacity: 0.8;
-}
+}*/
+
 /*.pokemon::before{
 
     margin-left: 20px;
@@ -65,3 +71,39 @@ header{
 .pokemon img{
     
 }*/
+
+main {
+    margin: 50px 0px 0px 50px;
+    display: flex;
+}
+
+.descripcion {
+    height: 50%;
+    width: 30%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 50px 0px 0px 750px;
+    padding: 15px 15px 15px 15px;
+    
+}
+
+.descripcion p {
+    text-align: center;
+    font-family: 'Jaro';
+    font-size: 30px;
+}
+
+.card-img-top {
+    background-image: url(../img/pokeball.png);
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+    background-size: 300px;
+}
+
+.card-title {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Jaro';
+
+}
